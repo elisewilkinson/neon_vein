@@ -1,0 +1,24 @@
+<html>
+	<head>
+		<link
+			href="https://daniel.pages.dev/video-js.min.css"
+			rel="stylesheet"
+		/>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/video.js/7.10.2/video.min.js"></script>
+	</head>
+	<body>
+		<video-js id="vid1" controls preload="auto">
+			<!-- Replace the src URL with the HLS manifest URL for a given video
+    You can access this from the Cloudflare Stream dashboard or via the Stream API -->
+			<source
+				src="https://customer-2ut9yn3y6fta1yxe.cloudflarestream.com/eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJraWQiOiIxNGU3NjczODQxMzM4N2RkZmMzMDg1N2FlM2JkZDg3NiIsInN1YiI6IjcxMTI5MWM0YWYwNDExZDM3MTFiZDg3MzUzMmUyZTM5IiwiZXhwIjoxNjYzMTE4NTk3fQ.XttsYjah6zY_Shh-rvKiE4nk8-0jKe-_zPW-ywjCiRXCoq8hdBrYwUgGthdYR9MbqhEG3ese22KuthpktUKg2ujSs_a5NsH46rXFVmrjosonO_3h_qj1W2j_lyVrkw3Cue9FhpWa2KzWlxld3RWRYd4m5xZTf3mpOfhAdO7jrL1M7NM46csO5s8LlHiScIA8NMkuBeH-6VNik3Yq2aGQZJiW690z2iomkbwIvXWHxfWpuHMsUac1fNzXohOMuF3tshvRADnNC7224z0Kh8qXP2EF-mJUsSfaLTGt2GrRH29di0xE_VxUuP4TFkpxaXzjLbBLbqib-3cx7YyDT1ahiQ/manifest/video.m3u8"
+				type="application/x-mpegURL"
+			/>
+		</video-js>
+
+		<script>
+			const vid = document.getElementById('vid1');
+			const player = videojs(vid);
+		</script>
+	</body>
+</html>
